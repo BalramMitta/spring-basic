@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config/>
+
+<bean id="studentbean" class="com.balram.springCoreTesting.Student">
+    <property name="fname" value="Vimal"></property>
+    <property name="lname" value="Jaiswal"></property>
+</bean>
+
+	<bean id="s1" name="s1" class="com.balram.springCoreTesting.Student">
+		<constructor-arg name="lname" value="first"></constructor-arg>
+        <constructor-arg name="fname" value="Balram"></constructor-arg>
+	</bean>
+
+    <bean id="b1" class="com.balram.springCoreTesting.B">
+        <constructor-arg value="first"></constructor-arg></bean>
+
+
+	<bean id="b2" class="com.balram.springCoreTesting.B">
+		<constructor-arg value="second"></constructor-arg></bean>
+
+    <bean id="a" class="com.balram.springCoreTesting.A" autowire="byName"></bean>
+
+
+
+	<bean id="x1" class="com.balram.springCoreTesting.X"></bean>
+	<bean id="y1" class="com.balram.springCoreTesting.Y" autowire="constructor"></bean>
+</beans>

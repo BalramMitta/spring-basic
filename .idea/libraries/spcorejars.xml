@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="spcorejars">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../spcorejars" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../spcorejars" recursive="false" />
+  </library>
+</component>
