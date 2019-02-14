@@ -9,27 +9,24 @@
 
 	<context:annotation-config/>
 
-<bean id="studentbean" class="com.balram.springCoreTesting.Student">
+<bean id="studentbean" class="com.balram.springcoretesting.Student">
     <property name="fname" value="Vimal"></property>
     <property name="lname" value="Jaiswal"></property>
 </bean>
 
-	<bean id="s1" name="s1" class="com.balram.springCoreTesting.Student">
+	<bean id="s1" name="s1" class="com.balram.springcoretesting.Student">
 		<constructor-arg name="lname" value="first"></constructor-arg>
         <constructor-arg name="fname" value="Balram"></constructor-arg>
 	</bean>
 
-    <bean id="b1" class="com.balram.springCoreTesting.B">
-        <constructor-arg value="first"></constructor-arg></bean>
+    <bean id="food" class="com.balram.springcoretesting.Food">
+        <constructor-arg value="Breakfast"></constructor-arg></bean>
 
 
-	<bean id="b2" class="com.balram.springCoreTesting.B">
-		<constructor-arg value="second"></constructor-arg></bean>
-
-    <bean id="a" class="com.balram.springCoreTesting.A" autowire="byName"></bean>
+    <bean id="animal" class="com.balram.springcoretesting.Animal" autowire="byName"></bean>
 
 
 
-	<bean id="x1" class="com.balram.springCoreTesting.X"></bean>
-	<bean id="y1" class="com.balram.springCoreTesting.Y" autowire="constructor"></bean>
+	<bean id="x1" class="com.balram.springcoretesting.X"></bean>
+	<bean id="y1" class="com.balram.springcoretesting.Y" autowire="constructor"></bean>
 </beans>
